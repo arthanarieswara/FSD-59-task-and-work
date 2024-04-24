@@ -1,1 +1,0 @@
-this is a demo session for learning git as well as github.com
