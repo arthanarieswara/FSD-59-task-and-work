@@ -1,0 +1,38 @@
+1. Write a blog on Difference between HTTP 1.1 and HTTP 2.
+    What is HTTP?
+        HTTP stands  for Hypertext Transfer Protocol, and it is the basic for almost all web applications. More specifically, HTTP is the method computers and servers use to request and send information.
+    What is HTTP 1.1?
+        The first usable version of HTTP was created in 1997. Because it went through several stage of development, this first version of HTTP was called as HTTP 1.1. This version is still in use on the web.
+    What is HTTP 2?
+        In 2015, a new version of HTTP called HTTP 2 was created. HTTP 2 solves several problems that the creators of HTTP 1.1 did not anticipate. In particular, HTTP 2 us much faster and more efficient than HTTP 1.1. One of the ways in which HTTP 2 is faster is in how it prioritizes content during the loading process. In HTTP/2, developers have hands-on, detailed control over prioritization. This allows them to maximize perceived and actual page load speed to a degree that was not possible in HTTP/1.1. HTTP/2 offers a feature called weighted prioritization. This allows developers to decide which page resources will load first, every time. In HTTP/2, when a client makes a request for a webpage, the server sends several streams of data to the client at once, instead of sending one thing after another. This method of data delivery is known as multiplexing. Developers can assign each of these data streams a different weighted value, and the value tells the client which data stream to render first.
+    What are the other differences between HTTP/2 and HTTP/1.1 that impact performance?
+        Multiplexing: HTTP/1.1 loads resources one after the other, so if one resource cannot be loaded, it blocks all the other resources behind it. In contrast, HTTP/2 is able to use a single TCP connection to send multiple streams of data at once so that no one resource blocks any other resource. HTTP/2 does this by splitting data into binary-code messages and numbering these messages so that the client knows which stream each binary message belongs to.
+
+        Server push: Typically, a server only serves content to a client device if the client asks for it. However, this approach is not always practical for modern webpages, which often involve several dozen separate resources that the client must request. HTTP/2 solves this problem by allowing a server to "push" content to a client before the client asks for it. The server also sends a message letting the client know what pushed content to expect – like if Bob had sent Alice a Table of Contents of his novel before sending the whole thing.
+
+        Header compression: Small files load more quickly than large ones. To speed up web performance, both HTTP/1.1 and HTTP/2 compress HTTP messages to make them smaller. However, HTTP/2 uses a more advanced compression method called HPACK that eliminates redundant information in HTTP header packets. This eliminates a few bytes from every HTTP packet. Given the volume of HTTP packets involved in loading even a single webpage, those bytes add up quickly, resulting in faster loading.
+    
+
+2. Write a blog about objects and its internal representation in Javascript.
+    In JavaScript, objects are fundamental constructs that allow developers to structure data and functionality in a flexible and dynamic manner. They play a crucial role in modern JavaScript development, serving as the building blocks for complex data structures, encapsulation, and abstraction. Understanding how objects work and their internal representation is essential for writing efficient and maintainable code. In this blog post, we'll delve into the concepts of objects in JavaScript, exploring their internal representation and key features.
+
+        What are Objects in JavaScript?
+            In JavaScript, an object is a collection of key-value pairs where each key is a string (or a symbol) and each value can be of any data type, including other objects, functions, arrays, and primitive values. Objects in JavaScript are instances of the Object constructor, or they can be created using object literals {}.
+
+        Internal Representation of Objects
+            Internally, objects in JavaScript are represented as hash tables or dictionaries, also known as "associative arrays." This representation allows for efficient lookup and insertion of properties. Each property of an object is stored as a key-value pair, where the key is a string (or a symbol) representing the property name, and the value is a reference to the property's value.
+
+            When you create an object and assign properties to it, JavaScript engine allocates memory for the object and stores its properties in the object's hash table. Accessing or modifying properties involves performing hash table lookups, which typically have constant time complexity, making property access fast and efficient.
+
+        Key Features of Objects
+            Dynamic Properties: JavaScript objects are dynamic, meaning you can add or remove properties at runtime.
+            
+            Prototype-based Inheritance: JavaScript objects can inherit properties and methods from other objects through a mechanism called prototype chain.
+
+        Understanding objects and their internal representation is crucial for mastering JavaScript development. Objects provide a powerful way to organize and manipulate data in JavaScript, offering flexibility and extensibility to your codebase. By understanding how objects work internally, you can write more efficient and maintainable code while leveraging the full potential of JavaScript's object-oriented features. The concept of objects in JavaScript, their internal representation as hash tables, and key features such as dynamic properties, object methods, and prototype-based inheritance. With this understanding, you'll be better equipped to leverage objects effectively in your JavaScript projects.
+
+
+
+
+
+
