@@ -15,18 +15,19 @@ const printOddNumbers = (arr) => {
   const convertToTitleCaps = (arr) => {
     const titleCapsArray = [];
     for (let i = 0; i < arr.length; i++) {
-      const words = arr[i].split(" ");
-      const titleCapsWords = words.map(
-        (word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
-      );
-      titleCapsArray.push(titleCapsWords.join(" "));
+        const words = arr[i].split(" ");
+        const titleCapsWords = words.map(
+            (word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
+        );
+        titleCapsArray.push(titleCapsWords.join(" "));
     }
     return titleCapsArray;
-  };
-  const inputString = ["hello world", "good morning", "have a nice day"];
-  const resultArray = convertToTitleCaps(inputArray);
-  console.log(resultArray);
-  
+};
+
+const inputString = ["hello world", "good morning", "have a nice day"];
+const resultArray = convertToTitleCaps(inputString); // Corrected variable name
+console.log(resultArray);
+
   // Sum of all numbers in an array
   
   const sumOfNumbers = (arr) => {
