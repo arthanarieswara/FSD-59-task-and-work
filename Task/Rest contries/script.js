@@ -40,6 +40,9 @@ function display(data1){
          <p class="card-text">Country Code : ${data1[i].cca2}</p>
          <p class="card-text">Latitude : ${data1[i].latlng[0]}</p>
          <p class="card-text">Longitude : ${data1[i].latlng[1]}</p>
+         <div id="btn">
+         <button class="btn btn-primary" id="btn" onclick="weather()">Weather</button>
+         </div>
          </div>`
    
        row.appendChild(col);
@@ -47,4 +50,3 @@ function display(data1){
        document.body.appendChild(main);    
    }
 }
-
