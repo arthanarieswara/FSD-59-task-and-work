@@ -30,7 +30,7 @@ function display(data1){
        var col = document.createElement('div');
        col.setAttribute('id','col');
        col.setAttribute('class','col-lg-4');
-       col.innerHTML = `<div class="card border-primary mb-3" style="max-width: 18rem;">
+       col.innerHTML = `<div class="card border-primary mb-3" id="con" style="max-width: 18rem;">
        <div class="card-header">${data1[i].name.common}</div>
        <div class="card-body text-primary">
          <img src="${data1[i].flags.png}" class="card-img-top" alt="Flag">
