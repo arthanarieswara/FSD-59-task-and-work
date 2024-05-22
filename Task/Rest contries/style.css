@@ -1,0 +1,25 @@
+.title {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: blue;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.card-header{
+    text-align: center;
+}
+
+.card-body{
+    text-align: center;
+}
+
+.card-text{
+    margin: 0px;
+}
+
+.content-text{
+    border: 1px solid black !important;
+    margin-top: 5px;
+}
