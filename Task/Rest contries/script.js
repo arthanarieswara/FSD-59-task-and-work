@@ -4,7 +4,6 @@ res.then((data)=>{
 }).then((data1 )=> display(data1)).catch((err)=>console.log(err))
 
 
-
 var title = document.createElement('div');
 title.setAttribute('id','title');
 title.setAttribute('class','title');
@@ -41,10 +40,22 @@ function display(data1){
          <p class="card-text">Latitude : ${data1[i].latlng[0]}</p>
          <p class="card-text">Longitude : ${data1[i].latlng[1]}</p>
          <div id="btn">
-         <button class="btn btn-primary" id="btn" onclick="weather()">Weather</button>
+         <button type="button" class="btn btn-primary" onclick="weather()">Weather</button>
+         </div>
          </div>
          </div>`
-   
+         async function weather(){
+            try{
+               lat = data1[i].latlng[0];
+               lon = data1[i].latlng[1];
+               let info_1 = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=ab1a84d294513347e3b2995fc5544e77`);
+               let info_2 = await info_1.json();
+               console.log(info_2.main.temp);
+            }
+            catch(err){
+               console.log(err);
+            }
+         }
        row.appendChild(col);
        main.appendChild(row);
        document.body.appendChild(main);    
