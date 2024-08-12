@@ -1,0 +1,27 @@
+.title{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+}
+
+#id{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+}
+
+.container{
+    text-align: center;
+}
+
+#btn:hover{
+    background-color: rgb(244, 14, 14);
+    color: white;
+}
+
+#reset:hover{
+    background-color: rgb(244, 14, 14);
+    color: white;
+}

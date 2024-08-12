@@ -1,0 +1,17 @@
+body{
+    background-color: lightblue;
+}
+
+.container{
+    text-align: center;
+    background-color: lightpink;
+}
+
+.popular{
+    text-align: center;
+}
+
+#col{
+    margin-top: 20px;
+    text-align: center;
+}

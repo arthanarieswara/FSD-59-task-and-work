@@ -1,0 +1,52 @@
+
+.container .card{
+    display: inline-block;
+
+  }
+  .card-header{
+    background-color: black;
+    color: white;
+    
+  }
+  body{
+    background-color: rgb(249, 251, 251);
+  }
+  h1{
+    color: white;
+  }
+  img{
+    height: 150px;
+    width: 250px;
+    margin: 10px;
+    padding: 10px;
+    justify-content: center;
+  }
+  .card{
+    text-align: center;
+    background-image: linear-gradient(to left,rgb(91, 91, 74),rgb(192, 191, 141));
+    color: white;
+    font-size: 15px;
+    font-family:'Times New Roman', Times, serif;
+    margin: 10px;
+    padding: 10px;
+    
+  }
+  .card-text{
+    background-image: linear-gradient(to left,rgb(91, 91, 74),rgb(192, 191, 141));
+  }
+  .list-group{
+    color: rgb(15, 13, 13);
+    background-image: linear-gradient(to left,rgb(91, 91, 74),rgb(192, 191, 141));
+  }
+  .btn{
+    background-image: linear-gradient(to left,rgb(94, 94, 70),rgb(192, 191, 141));
+    border: 1px solid white;
+    font-size: 10px;
+  }
+ 
+  #title{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: black;
+  }
